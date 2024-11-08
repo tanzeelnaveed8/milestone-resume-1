@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="/public/bg.jpg">
+    <div class="resume-preview-container" style="font-family: Arial, sans-serif; color: #000000;">
+        <div class="container">
+            <!-- Form Section -->
+            <div class="form-section">
+                <h2>Professional Resume Builder</h2>
+
+                <form id="resumeForm">
+                    <!-- Profile Picture -->
+                    <div class="form-group">
+                        <label for="profilePicture">Profile Picture</label>
+                        <input type="file" id="profilePicture" accept="image/*">
+                        <div id="profilePicturePreviewContainer">
+                            <img id="profilePicturePreview" class="profile-picture"
+                                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23ecf0f1'/%3E%3Cpath d='M75 80C91.569 80 105 66.569 105 50C105 33.431 91.569 20 75 20C58.431 20 45 33.431 45 50C45 66.569 58.431 80 75 80ZM35 110C35 95.088 47.088 83 62 83H88C102.912 83 115 95.088 115 110V130H35V110Z' fill='%23bdc3c7'/%3E%3C/svg%3E"
+                                alt="Profile Picture Preview">
+                        </div>
+                    </div>
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+
+                    <!-- Professional Title -->
+                    <div class="form-group">
+                        <label for="title">Professional Title</label>
+                        <input type="text" id="title" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="City, Country" required>
+                    </div>
+
+                    <!-- Professional Summary -->
+                    <div class="form-group">
+                        <label for="summary">Professional Summary</label>
+                        <textarea id="summary" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Work Experience -->
+                    <div id="experienceSection">
+                        <h3>Work Experience</h3>
+                        <button type="button" class="add-button" id="addExperience">Add Experience</button>
+                        <div id="experienceFields"></div>
+                    </div>
+
+                    <!-- Education -->
+                    <div id="educationSection">
+                        <h3>Education</h3>
+                        <button type="button" class="add-button" id="addEducation">Add Education</button>
+                        <div id="educationFields"></div>
+                    </div>
+
+                    <button id="generateResumeButton" type="button">Generate Resume</button>
+
+                </form>
+            </div>
+
+            <!-- Preview Section -->
+            <div class="preview-section">
+                <h2>Preview</h2>
+                <div id="resumePreview" class="resume-preview-container"></div>
+                <button type="button" id="saveImageButton">Save as Image</button>
+
+
+            </div>
+        </div>
+        <!-- Include html2canvas for image saving -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+/* General Body Styling */
+body {
+    background-color: #111; /* Dark black background */
+    color: #fff; /* White text for contrast */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, professional font */
+    margin: 0;
+    padding: 0;
+    background-image: url('/public/bg.jpg'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Container Styling */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.9); /* Stronger black background for container */
+    border-radius: 20px; /* Rounded edges for a more polished feel */
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.8); /* Larger shadow for depth */
+    max-width: 1400px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+
+  
+  /* Form Section Styling */
+  .form-section {
+    flex: 1;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.85); /* Stronger transparent black */
+    border-radius: 15px;
+    margin-right: 25px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7); /* More prominent shadow for depth */
+  }
+  
+  .form-section h2 {
+    color: red; /* Bold red title */
+    text-align: center;
+    font-size: 2.5em; /* Larger title for emphasis */
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    margin-bottom: 25px; /* Larger spacing between fields */
+  }
+  
+  .form-group label {
+    display: block;
+    color: #bbb; /* Softer light grey for labels */
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  
+  /* Input and Textarea Styling */
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1); /* Darker transparent white for input fields */
+    color: white;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Smooth transition for inputs */
+    font-size: 1.1em;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: red; /* Bold red border on focus */
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: red; /* Red background for buttons */
+    color: white;
+    border: none;
+    padding: 15px 25px; /* Larger padding for buttons */
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Smooth transition for button */
+  }
+  
+  button:hover {
+    background-color: black; /* Hover effect for button */
+    border: 2px solid red; /* Red border on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Preview Section Styling */
+  .preview-section {
+    flex: 1;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85); /* Strong transparent background */
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .preview-section h2 {
+    color: rgb(14, 13, 13); /* Bold red title */
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Custom Preview Content */
+  .preview-content {
+    background-color: rgba(250, 248, 248, 0.976);
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid red; /* Bold red border */
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  
+  /* Additional Styling for Sections */
+  #experienceSection, #educationSection {
+    margin-top: 40px;
+  }
+  
+  h3 {
+    color: rgb(15, 15, 15);
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Button Layout for Submit/Action */
+  button[type="button"], button[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  button[type="button"]:hover {
+    background-color: black; /* Hover effect for buttons */
+    border: 2px solid red;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .form-section, .preview-section {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    button {
+      font-size: 1.1em;
+    }
+  
+    h2 {
+      font-size: 2em;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+  /* Profile Picture Section */
+
+#profilePicturePreview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ecf0f1;
+    margin-top: 10px;
+}
+
+#profilePicture {
+    display: block;
+    margin-top: 10px;
+}
+
+#profilePicturePreviewContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    .resume-preview-header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .resume-preview-header img.profile-picture {
+        width: 100px;  /* Smaller size on small screens */
+        height: 100px;
+    }
+
+    .resume-preview-header h2 {
+        font-size: 20px;
+    }
+
+    .resume-preview-header p {
+        font-size: 12px;
+    }
+}
+/* Final Preview Profile Picture Adjustment */
+.resume-preview-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Add space below the profile picture */
+}
+
+.resume-preview-header img.profile-picture {
+    width: 120px;  /* Adjust the size of the profile picture */
+    height: 120px;
+    object-fit: cover;  /* Ensures the image is cropped and fits the circle */
+    border-radius: 50%;  /* Keeps it circular */
+    margin-bottom: 15px; /* Add space below the image */
+    border: 3px solid #ecf0f1; /* Border around the profile picture */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for emphasis */
+}
+
+/* Optional: Add some space around the profile picture for better spacing */
+.resume-preview-header h2 {
+    font-size: 24px;
+    margin: 5px 0;  /* Adjust margins for better text alignment */
+    text-align: center;
+}
+
+.resume-preview-header p {
+    font-size: 14px;
+    text-align: center;
+    color: #000000; /* Softer color for the contact details */
+    margin: 5px 0;
+}
